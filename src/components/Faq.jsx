@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Box,
   Stack,
-  Flex
+  Flex,
+  Heading
 } from '@chakra-ui/react'
 import FaqComponent from './FaqComponent';
 
@@ -19,7 +20,8 @@ const Faq = ()=> {
   const contactTitle = "Contacto"
 
   return(
-    <Stack gap="10px">
+    <Stack alignItems="center" gap="10px" pb="100px">
+      <Heading pb="50px">FAQ</Heading>
       <FaqComponent body={aboutBody} title={aboutTitle}/>
       <FaqComponent body={hardTechBody} title={hardTechTitle}/>
       <FaqComponent body={softTechBody} title={softTechTitle}/>
