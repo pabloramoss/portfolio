@@ -12,7 +12,7 @@ import {
 const FaqComponent = (props)=> {
 
   return(
-    <Flex justifyContent="center">
+    <Flex justifyContent="center" boxShadow='dark-lg'>
     <Accordion w={{sm:"60vw", xl:"700px"}} allowMultiple color="#110b16" >
       <AccordionItem borderRadius="10px" bgGradient='linear(to-r, #01f5dc, #01b2e4)'
 >

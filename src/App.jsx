@@ -5,17 +5,22 @@ import Hero from './components/Hero'
 import Faq from './components/Faq'
 import Footer from './components/Footer'
 import ProjectSection from './components/ProjectSection'
+import {
+  BrowserRouter,
+} from "react-router-dom";
 
 function App() {
 
   return (
-    <Stack bg="#110b16" color="white">
-      <Navbar />
-      <Hero />
-      <ProjectSection />
-      <Faq />
-      <Footer />
-    </Stack>
+    <BrowserRouter>
+      <Stack bg="#110b16" color="white">
+        <Navbar />
+        <Hero />
+        <ProjectSection id="projects" smooth />
+        <Faq />
+        <Footer />
+      </Stack>
+    </BrowserRouter>
   )
 }
 

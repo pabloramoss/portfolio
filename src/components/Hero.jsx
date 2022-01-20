@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Flex, Stack, Heading, Button, Text } from '@chakra-ui/react'
+import {HashLink} from "react-router-hash-link"
 
 function Hero() {
 
@@ -10,7 +11,9 @@ function Hero() {
         <Heading size="2xl">Hola, soy <Box as="span" bgGradient='linear(to-r, #01f5dc, #01b2e4)' bgClip='text'>Pablo</Box></Heading>
         <Text fontSize='2xl'>Frontend developer</Text>
         </Stack>
-        <Button colorScheme='cyan' width="200px" variant='outline'>VER PROYECTOS</Button>
+        <HashLink to="#projects" smooth>
+          <Button colorScheme='cyan' width="200px" variant='outline'>VER PROYECTOS</Button>
+        </HashLink>
       </Flex>
     </Stack>
   )

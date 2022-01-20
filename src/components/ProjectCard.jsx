@@ -8,7 +8,7 @@ import ProjectTags from './ProjectTags';
 const ProjectCard = (props)=> {
 
   return(
-    <Box height="500px" width="300px" bg="#1e1727" borderRadius={10}>
+    <Box boxShadow='dark-lg' height="500px" width="300px" bg="#1e1727" borderRadius={10}>
       <Link>
         <Image src="https://via.placeholder.com/300" borderTopRadius={10}></Image>
       </Link>

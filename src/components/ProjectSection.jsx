@@ -6,7 +6,7 @@ import { Grid, Stack, GridItem, Heading } from '@chakra-ui/react'
 const ProjectSection = ()=> {
 
   return(
-    <Stack alignItems="center" pb="150px">
+    <Stack id="projects" alignItems="center" pb="150px" pt="100px">
       <Heading pb="50px">PROYECTOS</Heading>
       <Grid templateColumns='repeat(3, 1fr)' gap={6}>
         <GridItem><ProjectCard title="Valobrain" /></GridItem>
