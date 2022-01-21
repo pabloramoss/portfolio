@@ -9,7 +9,7 @@ import FaqComponent from './FaqComponent';
 
 const Faq = ()=> {
   const aboutBody = "lorem impsum"
-  const hardTechBody = "lorem impsum"
+  const hardTechBody = "Frontend: Html, Css, Javascript, React, Next.js, Typescript, Frame Motion, Chakra-UI"
   const softTechBody = "lorem impsum"
   const futureBody = "lorem impsum"
   const contactBody = "lorem impsum"

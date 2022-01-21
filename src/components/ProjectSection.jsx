@@ -8,7 +8,7 @@ const ProjectSection = ()=> {
   return(
     <Stack id="projects" alignItems="center" pb="150px" pt="100px">
       <Heading pb="50px">PROYECTOS</Heading>
-      <Grid templateColumns='repeat(3, 1fr)' gap={6}>
+      <Grid templateColumns={{base:'repeat(1, 1fr)', md:'repeat(3, 1fr)'}} gap={6}>
         <GridItem><ProjectCard title="Valobrain" /></GridItem>
         <GridItem><ProjectCard title="My blog" /></GridItem>
         <GridItem><ProjectCard title="Gecomm" /></GridItem>

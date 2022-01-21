@@ -16,7 +16,7 @@ function App() {
       <Stack bg="#110b16" color="white">
         <Navbar />
         <Hero />
-        <ProjectSection id="projects" smooth />
+        <ProjectSection id="projects" />
         <Faq />
         <Footer />
       </Stack>
