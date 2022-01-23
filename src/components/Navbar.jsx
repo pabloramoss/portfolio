@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Flex, Link, IconButton,} from '@chakra-ui/react'
+import { Flex, Link, IconButton, Heading} from '@chakra-ui/react'
 import {HashLink,} from "react-router-hash-link"
 import { FaWindowClose, FaBars } from 'react-icons/fa'
 
@@ -13,8 +13,11 @@ function Navbar() {
     height="6vh" 
     width="100vw" 
     color="white" 
-    justifyContent="flex-end" 
-    position="fixed">
+    justifyContent="space-between" 
+    position="fixed"
+    alignItems="center"
+    color="cyan.500">
+      <HashLink to="#" smooth><Heading fontSize={25} ms={10}>PABLO</Heading></HashLink>
       <Flex 
       me={8} 
       alignItems="center">
@@ -31,7 +34,6 @@ function Navbar() {
         <IconButton 
         size="md" 
         bg="#160f1b"
-        mr={2} 
         icon={<FaBars />}
         display={["flex", "flex", "none", "none"]}
         onClick={()=> setDisplay("flex")}
