@@ -2,13 +2,23 @@ import React from 'react';
 import { Flex, Heading, Box, Image, Icon, Link, Stack, Grid } from '@chakra-ui/react'
 import { FaGithub, FaShare } from "react-icons/fa";
 import ProjectTags from './ProjectTags';
+import {motion} from "framer-motion"
 
 
 
 const ProjectCard = (props)=> {
+  const MotionBox = motion(Box)
 
   return(
-    <Box boxShadow='dark-lg' height="500px" width="300px" bg="#1e1727" borderRadius={10}>
+    <MotionBox 
+    whileHover={{ 
+      scale: 1.1, 
+      boxShadow: "0px 0px 8px rgb(255,255,255)" }} 
+    boxShadow='dark-lg' 
+    height="500px" 
+    width="300px" 
+    bg="#1e1727" 
+    borderRadius={10}>
       <Link>
         <Image src="https://via.placeholder.com/300" borderTopRadius={10}></Image>
       </Link>
@@ -22,7 +32,7 @@ const ProjectCard = (props)=> {
           <Link _hover={{color:"cyan"}}><Icon w={10} h={10}><FaShare /></Icon></Link>
         </Flex>
       </Stack>
-    </Box>
+    </MotionBox>
   )
 }
 export default ProjectCard

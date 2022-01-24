@@ -2,12 +2,17 @@ import React, {useState} from 'react'
 import { Flex, Link, IconButton, Heading} from '@chakra-ui/react'
 import {HashLink,} from "react-router-hash-link"
 import { FaWindowClose, FaBars } from 'react-icons/fa'
+import {motion} from "framer-motion"
 
 function Navbar() {
   const [display, setDisplay] = useState("none")
+  const MotionFlex = motion(Flex)
 
   return (
-    <Flex 
+    <MotionFlex 
+    initial={{y:-100}}
+    animate={{y:0}}
+    transition={{duration: 1}}
     zIndex={5} 
     bg="#160f1b" 
     height="6vh" 
@@ -17,7 +22,7 @@ function Navbar() {
     position="fixed"
     alignItems="center"
     color="cyan.500">
-      <HashLink to="#" smooth><Heading fontSize={25} ms={10}>PABLO</Heading></HashLink>
+      <HashLink to="#" smooth><Heading fontSize={20} ms={10}>PABLO</Heading></HashLink>
       <Flex 
       me={8} 
       alignItems="center">
@@ -85,7 +90,7 @@ function Navbar() {
           </Flex>
         </Flex>
       </Flex>
-    </Flex>
+    </MotionFlex>
   )
 }
 

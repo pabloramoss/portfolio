@@ -2,7 +2,6 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import { Grid, Stack, GridItem, Heading } from '@chakra-ui/react'
 
-
 const ProjectSection = ()=> {
 
   return(
@@ -14,6 +13,7 @@ const ProjectSection = ()=> {
         <GridItem><ProjectCard title="My portfolio" tech={["Next.js", "Chakra-UI"]} /></GridItem>
         <GridItem><ProjectCard title="CA Awards" tech={["Next.js", "Chakra-UI"]} /></GridItem>
         <GridItem><ProjectCard title="Giuseppe barber" tech={["Next.js", "Chakra-UI"]} /></GridItem>
+        <GridItem><ProjectCard title="Gecomm" tech={["Next.js", "Chakra-UI"]} /></GridItem>
       </Grid>
     </Stack>
   )
