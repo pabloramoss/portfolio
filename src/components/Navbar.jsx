@@ -12,7 +12,7 @@ function Navbar() {
     <MotionFlex 
     initial={{y:-100}}
     animate={{y:0}}
-    transition={{duration: 1}}
+    transition={{duration: 0.5}}
     zIndex={5} 
     bg="#160f1b" 
     height="6vh" 
@@ -34,7 +34,7 @@ function Navbar() {
           <HashLink to="#" smooth>Inicio</HashLink>
           <HashLink to="#projects" smooth>Proyectos</HashLink>
           <Link display="none">Blog</Link>
-          <HashLink to="#contact">Contacto</HashLink>
+          <HashLink to="#contact" smooth>Contacto</HashLink>
         </Flex>
         <IconButton 
         size="md" 
@@ -84,7 +84,8 @@ function Navbar() {
             </HashLink>
             <Link display="none">Blog</Link>
             <HashLink
-            to="#contact" 
+            to="#contact"
+            smooth 
             onClick={()=> setDisplay("none")}>Contacto
             </HashLink>
           </Flex>

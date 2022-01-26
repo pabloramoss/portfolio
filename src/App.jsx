@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Faq from './components/Faq'
 import Footer from './components/Footer'
 import ProjectSection from './components/ProjectSection'
+import Contact from './components/Contact'
 import {
   BrowserRouter,
 } from "react-router-dom";
@@ -15,8 +16,9 @@ function App() {
       <Stack bg="#110b16" color="white">
         <Navbar />
         <Hero />
-        <ProjectSection id="projects" />
+        <ProjectSection />
         <Faq />
+        <Contact />
         <Footer />
       </Stack>
     </BrowserRouter>
