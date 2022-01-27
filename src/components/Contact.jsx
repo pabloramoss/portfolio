@@ -7,7 +7,12 @@ import {
   Icon,
   Flex
 } from '@chakra-ui/react'
-import { FaTelegram, FaDownload, FaLinkedin } from "react-icons/fa";
+import { 
+  FaTelegram,
+  FaFileDownload, 
+  FaLinkedin 
+} from "react-icons/fa";
+import config from '../config';
 
 
 const Contact = ()=> {
@@ -19,23 +24,59 @@ const Contact = ()=> {
         <Text>Puedes contactarme por: </Text>
         <Flex gap={10}>
           <Link 
-          _hover={{color:"cyan"}} 
-          href='https://ar.linkedin.com/'
+          _hover={{color:"cyan", bg:"gray.800"}} 
+          href={config.linkedin}
+          isExternal
+          px={5}
+          borderRadius={8}
           >
-            <Icon mt={2} w={10} h={10}><FaLinkedin /></Icon>
+            <Icon 
+            mt={2} 
+            w={10} 
+            h={10}>
+              <FaLinkedin />
+            </Icon>
             Linkedin
             </Link>
           <Link 
-          _hover={{color:"cyan"}} 
-          href='https://ar.linkedin.com/'
+          _hover={{color:"cyan", bg:"gray.800"}} 
+          href={config.telegram}
+          isExternal
+          px={5}
+          borderRadius={8}
           >
-            <Icon mt={2} w={10} h={10}><FaTelegram /></Icon>
+            <Icon 
+            mt={2} 
+            w={10} 
+            h={10}>
+              <FaTelegram />
+            </Icon>
             Telegram
           </Link>
         </Flex>
-        <Flex pt={5} gap={8}>
-          <Text>Puedes descargar mi CV aquí: </Text>
-          <Link _hover={{color:"cyan"}} href='https://ar.linkedin.com/'><Icon w={10} h={10}><FaDownload /></Icon></Link>
+        <Flex 
+        pt={5} 
+        gap={8}
+        >
+          <Flex alignItems="center">
+            <Text>Puedes descargar mi CV aquí: </Text>
+            <Link 
+            _hover={{color:"cyan", bg:"gray.800"}} 
+            href={config.cv}
+            isExternal
+            borderRadius={8}
+            px={5}
+            >
+              <Icon
+              pt={2}
+              ps={2} 
+              w={10} 
+              h={10}
+            >
+                <FaFileDownload />
+              </Icon>
+            </Link>
+          </Flex>
         </Flex>
       </Stack>
     </Stack>

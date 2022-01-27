@@ -3,7 +3,7 @@ const config = {
   description: "Frontend Developer",
   coverImage: "",
   avatar: "",
-  project1Banner: "../../public/valobrainBanner.jpg",
+  project1Banner: "/valobrainBanner.jpg",
   project2Banner: "https://via.placeholder.com/300",
   project3Banner: "https://via.placeholder.com/300",
   project4Banner: "https://via.placeholder.com/300",
@@ -33,6 +33,8 @@ const config = {
   hardTech: "HTML, CSS, Javascript, Typescript, React, React-Testing-Library, Next.js, Chakra-UI, Framer-motion, Node.js, MongoDB, Firebase, Express, Git, Github, Figma, Photoshop",
   softTech: "Comunicación, trabajo en equipo, flexibilidad, creatividad, gestión del tiempo, planificación",
   future: "Mi objetivo es seguir especializándome en frontend y UI/UX. Otro objetivo es aprender todo lo relacionado con web3 como programación con Solidity, Web3.js, .Ether.js, etc.",
+  telegram: "https://tttttt.me/pablooramoss",
+  cv: ""
 };
 
 export default config;

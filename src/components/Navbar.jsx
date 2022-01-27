@@ -3,6 +3,7 @@ import { Flex, Link, IconButton, Heading} from '@chakra-ui/react'
 import {HashLink,} from "react-router-hash-link"
 import { FaWindowClose, FaBars } from 'react-icons/fa'
 import {motion} from "framer-motion"
+import config from '../config'
 
 function Navbar() {
   const [display, setDisplay] = useState("none")
@@ -33,7 +34,11 @@ function Navbar() {
         display={["none", "none", "flex", "flex"]}>
           <HashLink to="#" smooth>Inicio</HashLink>
           <HashLink to="#projects" smooth>Proyectos</HashLink>
-          <Link display="none">Blog</Link>
+          <Link 
+          display="none" 
+          href={config.project2Url}
+          isExternal
+          >Blog</Link>
           <HashLink to="#contact" smooth>Contacto</HashLink>
         </Flex>
         <IconButton 
@@ -82,7 +87,10 @@ function Navbar() {
             smooth 
             onClick={()=> setDisplay("none")}>Proyectos
             </HashLink>
-            <Link display="none">Blog</Link>
+            <Link 
+            display="none"
+            href={config.project2Url}
+            >Blog</Link>
             <HashLink
             to="#contact"
             smooth 
