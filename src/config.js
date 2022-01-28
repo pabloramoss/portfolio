@@ -29,7 +29,7 @@ const config = {
   hardTechTitle: "Habilidades técnicas",
   softTechTitle: "Habilidades blandas",
   futureTitle: "Planes a futuro",
-  about: "Me dedico al desarrollo de aplicaciones web. Me especializo en desarrollo frontend con React, aunque también tengo conocimientos de backend con Node.js",
+  about: "Me dedico al desarrollo de aplicaciones web. Me especializo en desarrollo frontend con React. Me gusta involucrarme en proyectos nuevos, aprender nuevas tecnologías, resolver problemas complejos y optimizar procesos.",
   hardTech: "HTML, CSS, Javascript, Typescript, React, React-Testing-Library, Next.js, Chakra-UI, Framer-motion, Node.js, MongoDB, Firebase, Express, Git, Github, Figma, Photoshop",
   softTech: "Comunicación, trabajo en equipo, flexibilidad, creatividad, gestión del tiempo, planificación",
   future: "Mi objetivo es seguir especializándome en frontend y UI/UX. Otro objetivo es aprender todo lo relacionado con web3 como programación con Solidity, Web3.js, .Ether.js, etc.",
