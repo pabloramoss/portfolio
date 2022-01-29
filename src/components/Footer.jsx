@@ -10,7 +10,7 @@ const Footer = ()=> {
 
   return(
     <Flex direction="column" alignItems="center" py="50px">
-      <Flex>
+      <Flex gap={4}>
         <MotionLink
         whileHover={{scale: 1.2}} 
         _hover={{color:"cyan"}} 
@@ -18,10 +18,10 @@ const Footer = ()=> {
         isExternal
         >
           <Icon 
-          w={10} 
-          h={10}>
-            <FaLinkedin />
-          </Icon>
+          w={6} 
+          h={6}
+          as={FaLinkedin}
+          />
         </MotionLink>
         <MotionLink 
         whileHover={{scale: 1.2}} 
@@ -30,11 +30,10 @@ const Footer = ()=> {
         isExternal
         >
           <Icon 
-          w={10} 
-          h={10}
-          >
-            <FaGithub />
-          </Icon>
+          w={6} 
+          h={6}
+          as={FaGithub}
+          />
         </MotionLink>
         <MotionLink 
         whileHover={{scale: 1.2}} 
@@ -43,9 +42,10 @@ const Footer = ()=> {
         isExternal
         >
           <Icon 
-          w={10} 
-          h={10}><FaTwitter />
-          </Icon>
+          w={6} 
+          h={6}
+          as={FaTwitter}
+          />
         </MotionLink>
       </Flex>
       <Text>© {year} - Pablo Ramos</Text>

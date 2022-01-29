@@ -1,9 +1,17 @@
 import React from 'react';
-import { Flex, Heading, Box, Image, Icon, Link, Stack, Grid } from '@chakra-ui/react'
-import { FaGithub, FaShare } from "react-icons/fa";
+import { 
+  Flex, 
+  Heading, 
+  Box, 
+  Image, 
+  Icon, 
+  Link, 
+  Stack, 
+  Grid 
+} from '@chakra-ui/react'
+import { FaGithub } from "react-icons/fa";
 import ProjectTags from './ProjectTags';
 import {motion} from "framer-motion"
-import config from '../config';
 
 
 
@@ -45,7 +53,7 @@ const ProjectCard = (props)=> {
           _hover={{color:"cyan"}}
           href={props.github} 
           isExternal
-          ><Icon w={10} h={10}><FaGithub /></Icon></Link>
+          ><Icon w={6} h={6} as={FaGithub} /></Link>
         </Flex>
       </Stack>
     </MotionBox>

@@ -22,35 +22,35 @@ const Contact = ()=> {
       <Heading pb="50px">CONTACTO</Heading>
       <Stack>  
         <Text>Puedes contactarme por: </Text>
-        <Flex gap={10}>
+        <Flex alignItems="center" gap={5}>
           <Link 
           _hover={{color:"cyan", bg:"gray.800"}} 
           href={config.linkedin}
           isExternal
-          px={5}
+          p={5}
           borderRadius={8}
           >
             <Icon 
-            mt={2} 
-            w={10} 
-            h={10}>
-              <FaLinkedin />
-            </Icon>
+            w={6} 
+            h={6}
+            as={FaLinkedin}
+            me={4}
+            />
             Linkedin
             </Link>
           <Link 
           _hover={{color:"cyan", bg:"gray.800"}} 
           href={config.telegram}
           isExternal
-          px={5}
+          p={5}
           borderRadius={8}
           >
             <Icon 
-            mt={2} 
-            w={10} 
-            h={10}>
-              <FaTelegram />
-            </Icon>
+            w={6} 
+            h={6}
+            as={FaTelegram}
+            me={4}
+            />
             Telegram
           </Link>
         </Flex>
@@ -65,16 +65,13 @@ const Contact = ()=> {
             href={config.cv}
             isExternal
             borderRadius={8}
-            px={5}
+            p={5}
             >
               <Icon
-              pt={2}
-              ps={2} 
-              w={10} 
-              h={10}
-            >
-                <FaFileDownload />
-              </Icon>
+              w={6} 
+              h={6}
+              as={FaFileDownload}
+              />
             </Link>
           </Flex>
         </Flex>

@@ -29,22 +29,22 @@ function Navbar() {
       alignItems="center">
         <Flex 
         alignItems="center"
-        gap="30px" 
+        gap={5} 
         me="32px" 
         display={["none", "none", "flex", "flex"]}>
           <HashLink to="#" smooth>Inicio</HashLink>
           <HashLink to="#projects" smooth>Proyectos</HashLink>
           <Link 
-          display="none" 
           href={config.project2Url}
           isExternal
           >Blog</Link>
           <HashLink to="#contact" smooth>Contacto</HashLink>
         </Flex>
         <IconButton 
-        size="md" 
+        w={6} 
+        h={6} 
         bg="#160f1b"
-        icon={<FaBars />}
+        as={FaBars}
         display={["flex", "flex", "none", "none"]}
         onClick={()=> setDisplay("flex")}
         _hover={{bg:"#1e1727"}}
@@ -66,9 +66,10 @@ function Navbar() {
           me="40px" 
           mt={2}>
             <IconButton
-            size='md'
+            w={6}
+            h={6}
             bg="#160f1b"
-            icon={<FaWindowClose />}
+            as={FaWindowClose}
             onClick={()=> setDisplay("none")}
             _hover={{bg:"#1e1727"}}
             />
@@ -88,7 +89,6 @@ function Navbar() {
             onClick={()=> setDisplay("none")}>Proyectos
             </HashLink>
             <Link 
-            display="none"
             href={config.project2Url}
             >Blog</Link>
             <HashLink

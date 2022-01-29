@@ -21,17 +21,17 @@ const ProjectSection = ()=> {
         <GridItem>
           <ProjectCard 
           title="My blog" 
-          tech={["Next.js", "Chakra-UI", "SSR", "React-router", "React"]}src={config.project2Banner}
-          url={config.project1Url}
+          tech={["Next.js", "Chakra-UI", "SSR", "Markdown"]}src={config.project2Banner}
+          url={config.project2Url}
           github={config.project2Github}
           />
         </GridItem>
         <GridItem>
           <ProjectCard 
           title="My portfolio" 
-          tech={["Next.js", "Chakra-UI"]}
+          tech={["React", "Chakra-UI"]}
           src={config.project3Banner}
-          url={config.project1Url}
+          url={config.project3Url}
           github={config.project3Github}
           />
         </GridItem>
@@ -40,7 +40,7 @@ const ProjectSection = ()=> {
           title="CA Awards" 
           tech={["Next.js", "Chakra-UI"]} 
           src={config.project4Banner}
-          url={config.project1Url}
+          url={config.project4Url}
           github={config.project1Github}
           />
         </GridItem>
@@ -49,16 +49,16 @@ const ProjectSection = ()=> {
           title="Giuseppe barber" 
           tech={["Next.js", "Chakra-UI"]} 
           src={config.project5Banner}
-          url={config.project1Url}
+          url={config.project5Url}
           github={config.project1Github}
           />
         </GridItem>
         <GridItem>
           <ProjectCard 
           title="Gecomm" 
-          tech={["Next.js", "Chakra-UI"]} 
+          tech={["Next.js", "Chakra-UI", "Firestore", "SSR"]} 
           src={config.project6Banner}
-          url={config.project1Url}
+          url={config.project6Url}
           github={config.project1Github}
           />
         </GridItem>
