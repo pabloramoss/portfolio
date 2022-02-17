@@ -37,6 +37,15 @@ const ProjectSection = ()=> {
         </GridItem>
         <GridItem>
           <ProjectCard 
+          title="Gecomm" 
+          tech={["Next.js", "Chakra-UI", "SSR"]} 
+          src={config.project6Banner}
+          url={config.project6Url}
+          github={config.project1Github}
+          />
+        </GridItem>
+        <GridItem>
+          <ProjectCard 
           title="CA Awards" 
           tech={["Next.js", "Chakra-UI"]} 
           src={config.project4Banner}
@@ -50,15 +59,6 @@ const ProjectSection = ()=> {
           tech={["Next.js", "Chakra-UI"]} 
           src={config.project5Banner}
           url={config.project5Url}
-          github={config.project1Github}
-          />
-        </GridItem>
-        <GridItem>
-          <ProjectCard 
-          title="Gecomm" 
-          tech={["Next.js", "Chakra-UI", "Firestore", "SSR"]} 
-          src={config.project6Banner}
-          url={config.project6Url}
           github={config.project1Github}
           />
         </GridItem>
